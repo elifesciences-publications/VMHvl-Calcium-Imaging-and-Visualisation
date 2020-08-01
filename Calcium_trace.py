@@ -100,12 +100,12 @@ def Graphing (listaColumns, lista_beh, ListColor):
             Axes[len(Axes) -1] = plt.gca().add_artist(legenda)
             #aggiunge di volta in volta la legenda creata sopra al grafico
         else:  
-            fig.savefig('C:/Users/Krzywy/Desktop/Calcium analysis/graphs/VmhE5/SF16/1-4a.png',transparent=True, facecolor='white')
+            fig.savefig('Path_to_save_figure.png',transparent=True, facecolor='white')
 
 ''' 
 Import Data
 '''        
-Data_beh=pd.read_csv("C:/Users/Krzywy/Desktop/Calcium analysis/dataframes/VmhE5/VmhE5_SF16a.csv", sep=',')
+Data_beh=pd.read_csv("Path_to_dataframe_with_calcium_traces.csv", sep=',')
 Data_beh=Data_beh.dropna()
 x = Data_beh.loc[ : ,'Frames']
 beh = Data_beh.loc[:,'Beh'] 
